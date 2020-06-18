@@ -9,13 +9,13 @@ submitting the Form and redirecting the user to a confirmation page, where it ca
 
 ## Requirements
 
-1. Visual Studio 2015 or later.
-2. SQL Server 2016 or later.
-3. SSMS.
+1. [Visual Studio 2015 or later](https://visualstudio.microsoft.com/downloads/).
+2. [SQL Server 2016 or later](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
+3. [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15).
 
 ## To start testing FormSubmissionValidation
 
-1. Download and restore locally Nortwind database following the [available instructions]
+1. Download and restore locally Nortwind database following the [available instructions](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs).
 2. Create the following stored procedure:
 
 ```sql
@@ -38,5 +38,3 @@ WHERE C.ContactName LIKE '%' + @ContactName + '%'
 If you have questions, reach out to us at: jalugogarcia@gmail.com.
 
 Happy coding!
-
-[available instructions]: https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs
