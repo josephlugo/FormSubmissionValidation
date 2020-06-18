@@ -391,7 +391,7 @@
                                             <div class="col-sm-9 col-md-9 col-xs-12">
                                                 <div class="form-group px-3 validate-me-modalSearch">
                                                     <asp:Label Font-Size="11pt" ID="lbl_contactNameModal" runat="server" Text="Name:"></asp:Label>
-                                                    <asp:TextBox runat="server" ID="txt_cust_contactName" autocomplete="off" ClientIDMode="Static" placeholder="Type last name" class="form-control"></asp:TextBox>
+                                                    <asp:TextBox runat="server" ID="txt_cust_contactName" autocomplete="off" ClientIDMode="Static" placeholder="Contact name" class="form-control"></asp:TextBox>
                                                     <div class="invalid-feedback">
                                                         Please enter a last name.  
                                                     </div>
