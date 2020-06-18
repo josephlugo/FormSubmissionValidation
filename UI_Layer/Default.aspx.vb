@@ -21,13 +21,13 @@ Public Class _Default
             lbl_dob.Text = "Date of Birth &nbsp;<font color='red'>*</font>"
             lbl_pers_email.Text = "Email &nbsp; <font color='red'>*</font>"
 
-            txt_first_name.Text = "Jose"
-            txt_LastName.Text = "Lugo"
-            txt_id_number.Text = "23213"
-            txt_customer_id.Text = "ARFGC"
-            txt_dt_of_birth.Text = "01/23/1982"
-            txt_local_phone.Text = "4565985562"
-            txt_per_email.Text = "ja@me.com"
+            'txt_first_name.Text = "Jose"
+            'txt_LastName.Text = "Lugo"
+            'txt_id_number.Text = "23213"
+            'txt_customer_id.Text = "ARFGC"
+            'txt_dt_of_birth.Text = "01/23/1982"
+            'txt_local_phone.Text = "4565985562"
+            'txt_per_email.Text = "ja@me.com"
 
             If Not Page.IsPostBack Then
 
