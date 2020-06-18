@@ -9,14 +9,14 @@ submitting the Form and redirecting the user to a confirmation page, where it ca
 
 ## Requirements
 
-1- Visual Studio 2015 or later.
-2- SQL Server 2016 or later.
-3- SSMS.
+1. Visual Studio 2015 or later.
+2. SQL Server 2016 or later.
+3. SSMS.
 
 ## To start testing FormSubmissionValidation
 
-1- Download and restore locally Nortwind database following the [available instructions]
-2- Create the following stored procedure:
+1. Download and restore locally Nortwind database following the [available instructions]
+2. Create the following stored procedure:
 
 ```sql
 USE [Northwind]
@@ -26,14 +26,14 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER PROCEDURE [dbo].[GetCustomerIDByContactName] @ContactName nvarchar(30)
+CREATE OR ALTER PROCEDURE [dbo].[GetCustomerIDByContactName] @ContactName nvarchar(30)
 AS
 SELECT CustomerID, ContactName
 FROM Customers C
 WHERE C.ContactName LIKE '%' + @ContactName + '%'
 ```
 
-3- Download the solution and start testing.
+3. Download the solution and start testing.
 
 If you have questions, reach out to us at: jalugogarcia@gmail.com.
 
