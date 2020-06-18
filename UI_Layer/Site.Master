@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="UI_Layer.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <%--The following line should be in all the web applications projects henceforth--%>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Form Submission Validation</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+
+     <%--The following reference needs to be added manually in order for dropdown on Bootstrap 4.0 to work.   --%>
+    <script src="Scripts/umd/popper.min.js"></script>
+
+    <form runat="server" id="mainform" novalidate>
+
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <%--Modified template for Bootstrap 4.X.X--%>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
+                <a class="navbar-brand" href="/">  
+                    <img src="Img/navbar-brand-unsplash.png" class="logoimg" />
+                </a>                
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Application Toggle Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                 <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" runat="server" id="tabHome" >
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>                             
+                        </li>
+                        <li class="nav-item" runat="server" id="tabContact">
+                            <a class="nav-link" href="/Contact">Contact</a>                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server">Hello, <asp:LoginName runat="server" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </nav> 
+
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />        
+
+        <div class="container body-content">
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <hr />
+
+            <footer class="text-center">
+                <p>&copy; <%: DateTime.Now.Year %> - Form Submission Validation </p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>
