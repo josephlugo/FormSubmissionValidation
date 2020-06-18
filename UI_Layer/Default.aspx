@@ -376,7 +376,7 @@
                     </div>
                 </div>
 
-                <%-- Modal popup for searching EMPLID by lastname --BEGIN --%>
+                <%-- Modal popup for searching Customer ID by Contact Name --BEGIN --%>
                 <div class="modal fade" id="Search_CUSTID" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable" role="document">
                         <!-- Modal content-->
@@ -437,7 +437,7 @@
                     </div>
 
                 </div>
-                <%-- Modal popup for searching EMPLID by lastname --END --%>
+                <%-- Modal popup for searching Customer ID by Contact Name --END --%>
 
                 <%-- Modal popup for Confirm Data Entry --BEGIN --%>
                 <div class="modal fade" id="ConfirmActionMod" tabindex="-1" role="dialog" aria-hidden="true">
